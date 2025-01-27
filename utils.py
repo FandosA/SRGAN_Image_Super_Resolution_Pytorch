@@ -117,7 +117,7 @@ def plotLoss(log_dir, train_losses=None, validation_losses=None, img_name="img")
     plt.draw()
     #plt.savefig(os.path.join(log_dir, img_name, '.png'))
     
-    plt.show()
+    #plt.show()
 
     
 def plotAccuracy(log_dir, train_accs=None, validation_accs=None, img_name="img"):
@@ -157,4 +157,4 @@ def plotAccuracy(log_dir, train_accs=None, validation_accs=None, img_name="img")
     plt.draw()
     #plt.savefig(os.path.join(log_dir, img_name, '.png'))
     
-    plt.show()
+    #plt.show()
