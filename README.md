@@ -13,4 +13,4 @@ To train the model, you can tune the parameters and hyperparameters as you wish.
 ```
 python train.py
 ```
-When the training starts, a folder is created. In this folder, six _txt_ files will be stored with the values of the discriminator and generator loss and the discriminator accuracy at each epoch. 
+When the training starts, a folder is created. The name of this folder consists of the name given in the parameters, plus the relevant training parameter information, such as the batch size, the learning rate, the up scaling factor and the number of residual blocks to add to the network. Thus, you always know what parameters you used for that model. In my case, the name of my training folder is _**srgan_bs2_lr0.0001_upscalefactor2_numresblocks16**_. Six _txt_ files are stored in this folder. They contain the values of the discriminator and generator loss and the discriminator accuracy at each epoch. Finally, inside this folder, another subfolder, called _checkpoints_, is created to store the model every 10 epochs, and also the best model (i.e. the model with the lowest loss value). I provide the model of the generator I trained so you can use it.
