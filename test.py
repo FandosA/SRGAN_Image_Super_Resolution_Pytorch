@@ -15,7 +15,7 @@ from utils import selectDevice, tensorToImage, imageToTensor
 
 if __name__ == "__main__":
     
-    # Select parameters for training
+    # Select parameters for testing
     arg = configargparse.ArgumentParser()
     arg.add_argument('--dataset_path', type=str, default='test_images', help='Dataset path.')
     arg.add_argument('--log_dir', type=str, default='srgan_bs2_lr0.0001_upscalefactor2_numresblocks16', help='Name of the folder where the files of checkpoints and precision and loss values are stored.')
