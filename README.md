@@ -1,4 +1,4 @@
-# Image Super Resolution SRGAN
+# SRGAN - Image Super Resolution
 Unofficial implementation of the SRGAN model based on the paper [Photo-Realistic Single Image Super-Resolution Using a Generative Adversarial Network](https://arxiv.org/pdf/1609.04802v5). With this repository, you will be able to implement the model from scratch using your own dataset. The steps to train and test the model, along with the project details, are explained below.
 
 ## Dataset preparation
