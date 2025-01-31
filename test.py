@@ -34,10 +34,11 @@ if __name__ == "__main__":
     generator.eval()
     
     image_paths = []
-
+    
     for root, _, files in os.walk(os.path.join(args.dataset_path, "original")):
         for file in files:
-            image_paths.append(os.path.join(root, file))
+            if file.lower().endswith(('.png', '.jpg', '.jpeg', '.bmp', '.tiff')):
+                image_paths.append(os.path.join(root, file))
     
     with torch.no_grad():
         
