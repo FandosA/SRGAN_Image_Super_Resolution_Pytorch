@@ -28,6 +28,9 @@ class ContentLoss(nn.Module):
         self.mse_loss = nn.MSELoss()
     
     def forward(self, image_generated, image_real):
+
+        image_generated = (image_generated + 1) / 2
+        image_real = (image_real + 1) / 2
         
         image_generated = self.normalize(image_generated)
         image_real = self.normalize(image_real)
