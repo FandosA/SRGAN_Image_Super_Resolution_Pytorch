@@ -18,6 +18,11 @@ When the training starts, a folder is created. The folder name consists of the n
 ## Test the model
 To test the model, simply set the model to be tested in the parameters, along with the same training parameters used during the model's training (i.e., upscale factor and number of residual blocks). Then, place the images you want to upscale in the ```test_images/original/``` folder and run:
 ```
-python test.py
+python test_images.py
 ```
 The resulting upscaled images will be saved in the ```test_images/upscaled/``` folder. As an example, check out the folder containing the image I upscaled, available here in the repository.
+
+The same process can be carried out for videos and running the file
+```
+python test_videos.py
+```
