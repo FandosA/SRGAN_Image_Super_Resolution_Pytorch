@@ -22,7 +22,7 @@ python test_images.py
 ```
 The resulting upscaled images will be saved in the ```test_images/upscaled/``` folder. As an example, check out the folder containing the image I upscaled, available here in the repository.
 
-The same process can be carried out for videos and running the file
+The same process can be carried out for videos running the file
 ```
 python test_videos.py
 ```
