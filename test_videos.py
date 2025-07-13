@@ -52,7 +52,7 @@ if __name__ == "__main__":
             fps = cap.get(cv2.CAP_PROP_FPS)
             total_frames = int(cap.get(cv2.CAP_PROP_FRAME_COUNT))
     
-            # Read first frame to get resolution
+            # Read first frame to get resolution of the video
             ret, frame = cap.read()
             if not ret:
                 print(f"Error reading first frame from video: {video_path}")
@@ -65,7 +65,7 @@ if __name__ == "__main__":
             
             height, width = out_image.shape[:2]
 
-            # Reset video tot he first frame
+            # Reset video to the first frame
             cap.set(cv2.CAP_PROP_POS_FRAMES, 0)
         
             output_dir = os.path.join(args.dataset_path, "upscaled")
